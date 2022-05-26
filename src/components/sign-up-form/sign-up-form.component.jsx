@@ -42,7 +42,6 @@ const SignUpForm = () => {
   }
 
   const handleChange = (event) => {
-    console.log('event.target', event.target)
     const { name, value } = event.target;
     setFormFields({ ...formFields, [name]: value });
   }
@@ -56,7 +55,6 @@ const SignUpForm = () => {
         <FormInput label="Password" type="password" required onChange={handleChange} name="password" value={password} />
         <FormInput label="Confirm Password" type="password" required onChange={handleChange} name="confirmPassword" value={confirmPassword} />
         <Button type='submit'>Sign Up</Button>
-
       </form>
     </div>
   );
