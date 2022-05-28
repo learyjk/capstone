@@ -20,13 +20,13 @@ const CheckoutItem = ({ checkoutItem }) => {
       <img className='image-container' src={imageUrl} alt={name} />
       <span className='name'>{name}</span>
       <div className='quantity'>
-        <span className='quantity arrow' onClick={() => handleChangeQuantity(-1)}>-</span>
+        <span className='quantity arrow' onClick={() => handleChangeQuantity(-1)}>&#10094;</span>
         <span className='quantity'>{quantity}</span>
-        <span className='quantity arrow' onClick={() => handleChangeQuantity(1)}>+</span>
+        <span className='quantity arrow' onClick={() => handleChangeQuantity(1)}>&#10095;</span>
       </div>
 
       <span className='price'>{price}</span>
-      <span className='remove-button' onClick={handleRemoveCartItem}>X</span>
+      <span className='remove-button' onClick={handleRemoveCartItem}>&#10005;</span>
     </div>
   );
 }
